@@ -5,24 +5,33 @@
  */
 package lab_proyecto;
 
+import java.awt.Color;
+
 /**
  *
  * @author User
  */
 public class Torre extends Pieza {
 
-    public Torre(int posx, int posy, String color, String nombre, boolean activa) {
+    public Torre(int posx, int posy, Color color, String nombre, boolean activa) {
         super(posx, posy, color, nombre, activa);
     }
 
+    
+
     @Override
-    boolean moverse(int x1, int y1, int x2, int y2) {
+    boolean moverse(int x1, int y1, int x2, int y2,Object[][]mat) {
         return true;
     }
 
     @Override
-    boolean comer(int x1, int y1, int x2, int y2) {
+    boolean comer(int x1, int y1, int x2, int y2,Object[][]mat) {
         return true;
+    }
+
+    @Override
+    public String toString() {
+        return super.getNombre();
     }
 
 }

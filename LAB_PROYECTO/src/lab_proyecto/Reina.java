@@ -5,24 +5,32 @@
  */
 package lab_proyecto;
 
+import java.awt.Color;
+
 /**
  *
  * @author User
  */
 public class Reina extends Pieza{
 
-    public Reina(int posx, int posy, String color, String nombre, boolean activa) {
+    public Reina(int posx, int posy, Color color, String nombre, boolean activa) {
         super(posx, posy, color, nombre, activa);
     }
 
     @Override
-    boolean moverse(int x1, int y1, int x2, int y2) {
+    boolean moverse(int x1, int y1, int x2, int y2,Object[][]mat) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     @Override
-    boolean comer(int x1, int y1, int x2, int y2) {
+    boolean comer(int x1, int y1, int x2, int y2,Object[][]mat) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
+
+    @Override
+    public String toString() {
+        return super.getNombre();
+    }
+    
     
 }

@@ -5,8 +5,11 @@
  */
 package lab_proyecto;
 
+import java.awt.Color;
 import java.awt.GridLayout;
+import javax.swing.Icon;
 import javax.swing.JButton;
+import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 
 /**
@@ -19,8 +22,13 @@ public class Principal extends javax.swing.JFrame {
      * Creates new form Principal
      */
     public Principal() {
-        
+
         initComponents();
+        
+        asigna();
+        asignarpiezas();
+        asigna2();
+
     }
 
     /**
@@ -32,70 +40,657 @@ public class Principal extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jButton1 = new javax.swing.JButton();
-        panel = new javax.swing.JPanel();
+        b01 = new javax.swing.JButton();
+        b02 = new javax.swing.JButton();
+        b10 = new javax.swing.JButton();
+        b11 = new javax.swing.JButton();
+        b12 = new javax.swing.JButton();
+        b20 = new javax.swing.JButton();
+        b21 = new javax.swing.JButton();
+        b00 = new javax.swing.JButton();
+        b03 = new javax.swing.JButton();
+        b13 = new javax.swing.JButton();
+        b23 = new javax.swing.JButton();
+        b04 = new javax.swing.JButton();
+        b14 = new javax.swing.JButton();
+        b24 = new javax.swing.JButton();
+        b05 = new javax.swing.JButton();
+        b15 = new javax.swing.JButton();
+        b25 = new javax.swing.JButton();
+        b06 = new javax.swing.JButton();
+        b07 = new javax.swing.JButton();
+        b30 = new javax.swing.JButton();
+        b40 = new javax.swing.JButton();
+        b31 = new javax.swing.JButton();
+        b42 = new javax.swing.JButton();
+        b32 = new javax.swing.JButton();
+        b33 = new javax.swing.JButton();
+        b34 = new javax.swing.JButton();
+        b16 = new javax.swing.JButton();
+        b17 = new javax.swing.JButton();
+        b26 = new javax.swing.JButton();
+        b27 = new javax.swing.JButton();
+        b35 = new javax.swing.JButton();
+        b36 = new javax.swing.JButton();
+        b37 = new javax.swing.JButton();
+        b50 = new javax.swing.JButton();
+        b60 = new javax.swing.JButton();
+        b70 = new javax.swing.JButton();
+        b22 = new javax.swing.JButton();
+        b43 = new javax.swing.JButton();
+        b44 = new javax.swing.JButton();
+        b45 = new javax.swing.JButton();
+        b46 = new javax.swing.JButton();
+        b47 = new javax.swing.JButton();
+        b57 = new javax.swing.JButton();
+        b56 = new javax.swing.JButton();
+        b55 = new javax.swing.JButton();
+        b53 = new javax.swing.JButton();
+        b54 = new javax.swing.JButton();
+        b52 = new javax.swing.JButton();
+        b41 = new javax.swing.JButton();
+        b61 = new javax.swing.JButton();
+        b62 = new javax.swing.JButton();
+        b71 = new javax.swing.JButton();
+        b63 = new javax.swing.JButton();
+        b51 = new javax.swing.JButton();
+        b73 = new javax.swing.JButton();
+        b64 = new javax.swing.JButton();
+        b66 = new javax.swing.JButton();
+        b65 = new javax.swing.JButton();
+        b67 = new javax.swing.JButton();
+        b74 = new javax.swing.JButton();
+        b75 = new javax.swing.JButton();
+        b76 = new javax.swing.JButton();
+        b77 = new javax.swing.JButton();
+        b72 = new javax.swing.JButton();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
+        jLabel8 = new javax.swing.JLabel();
+        jLabel9 = new javax.swing.JLabel();
+        jLabel10 = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
+        jLabel12 = new javax.swing.JLabel();
+        jLabel13 = new javax.swing.JLabel();
+        jLabel14 = new javax.swing.JLabel();
+        jLabel15 = new javax.swing.JLabel();
+        jLabel16 = new javax.swing.JLabel();
+        jLabel17 = new javax.swing.JLabel();
+        jLabel18 = new javax.swing.JLabel();
+        jLabel19 = new javax.swing.JLabel();
+        jLabel20 = new javax.swing.JLabel();
+        jLabel21 = new javax.swing.JLabel();
+        jLabel22 = new javax.swing.JLabel();
+        jLabel11 = new javax.swing.JLabel();
+        quienva = new javax.swing.JLabel();
+        inicio = new javax.swing.JButton();
+        jLabel23 = new javax.swing.JLabel();
+        jLabel24 = new javax.swing.JLabel();
+        mover = new javax.swing.JButton();
+        jLabel27 = new javax.swing.JLabel();
+        Y1 = new javax.swing.JSpinner();
+        X2 = new javax.swing.JSpinner();
+        Y2 = new javax.swing.JSpinner();
+        X1 = new javax.swing.JSpinner();
+        jLabel28 = new javax.swing.JLabel();
+        jLabel29 = new javax.swing.JLabel();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        guia = new javax.swing.JTextArea();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jButton1.setText("jButton1");
-        jButton1.addMouseListener(new java.awt.event.MouseAdapter() {
+        b01.setText("jButton1");
+        b01.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jButton1MouseClicked(evt);
+                b01MouseClicked(evt);
             }
         });
+        getContentPane().add(b01, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 50, 80, 80));
 
-        javax.swing.GroupLayout panelLayout = new javax.swing.GroupLayout(panel);
-        panel.setLayout(panelLayout);
-        panelLayout.setHorizontalGroup(
-            panelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 750, Short.MAX_VALUE)
-        );
-        panelLayout.setVerticalGroup(
-            panelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 558, Short.MAX_VALUE)
-        );
+        b02.setText("jButton1");
+        b02.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                b02MouseClicked(evt);
+            }
+        });
+        getContentPane().add(b02, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 50, 80, 80));
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(317, 317, 317)
-                        .addComponent(jButton1))
-                    .addGroup(layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(panel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(35, Short.MAX_VALUE))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(panel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGap(18, 18, 18)
-                .addComponent(jButton1)
-                .addGap(22, 22, 22))
-        );
+        b10.setText("jButton1");
+        b10.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                b10MouseClicked(evt);
+            }
+        });
+        getContentPane().add(b10, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 130, 80, 80));
+
+        b11.setText("jButton1");
+        b11.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                b11MouseClicked(evt);
+            }
+        });
+        getContentPane().add(b11, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 130, 80, 80));
+
+        b12.setText("jButton1");
+        b12.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                b12MouseClicked(evt);
+            }
+        });
+        getContentPane().add(b12, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 130, 80, 80));
+
+        b20.setText("jButton1");
+        getContentPane().add(b20, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 210, 80, 80));
+
+        b21.setText("jButton1");
+        getContentPane().add(b21, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 210, 80, 80));
+
+        b00.setText("jButton1");
+        b00.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                b00MouseClicked(evt);
+            }
+        });
+        getContentPane().add(b00, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 50, 80, 80));
+
+        b03.setText("jButton1");
+        b03.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                b03MouseClicked(evt);
+            }
+        });
+        getContentPane().add(b03, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 50, 80, 80));
+
+        b13.setText("jButton1");
+        b13.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                b13MouseClicked(evt);
+            }
+        });
+        getContentPane().add(b13, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 130, 80, 80));
+
+        b23.setText("jButton1");
+        getContentPane().add(b23, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 210, 80, 80));
+
+        b04.setText("jButton1");
+        b04.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                b04MouseClicked(evt);
+            }
+        });
+        getContentPane().add(b04, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 50, 80, 80));
+
+        b14.setText("jButton1");
+        b14.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                b14MouseClicked(evt);
+            }
+        });
+        getContentPane().add(b14, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 130, 80, 80));
+
+        b24.setText("jButton1");
+        getContentPane().add(b24, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 210, 80, 80));
+
+        b05.setText("jButton1");
+        b05.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                b05MouseClicked(evt);
+            }
+        });
+        getContentPane().add(b05, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 50, 80, 80));
+
+        b15.setText("jButton1");
+        b15.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                b15MouseClicked(evt);
+            }
+        });
+        getContentPane().add(b15, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 130, 80, 80));
+
+        b25.setText("jButton1");
+        getContentPane().add(b25, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 210, 80, 80));
+
+        b06.setText("jButton1");
+        b06.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                b06MouseClicked(evt);
+            }
+        });
+        getContentPane().add(b06, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 50, 80, 80));
+
+        b07.setText("jButton1");
+        b07.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                b07MouseClicked(evt);
+            }
+        });
+        getContentPane().add(b07, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 50, 80, 80));
+
+        b30.setText("jButton1");
+        getContentPane().add(b30, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 290, 80, 80));
+
+        b40.setText("jButton1");
+        getContentPane().add(b40, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 370, 80, 80));
+
+        b31.setText("jButton1");
+        getContentPane().add(b31, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 290, 80, 80));
+
+        b42.setText("jButton1");
+        getContentPane().add(b42, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 370, 80, 80));
+
+        b32.setText("jButton1");
+        getContentPane().add(b32, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 290, 80, 80));
+
+        b33.setText("jButton1");
+        getContentPane().add(b33, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 290, 80, 80));
+
+        b34.setText("jButton1");
+        getContentPane().add(b34, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 290, 80, 80));
+
+        b16.setText("jButton1");
+        b16.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                b16MouseClicked(evt);
+            }
+        });
+        getContentPane().add(b16, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 130, 80, 80));
+
+        b17.setText("jButton1");
+        getContentPane().add(b17, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 130, 80, 80));
+
+        b26.setText("jButton1");
+        getContentPane().add(b26, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 210, 80, 80));
+
+        b27.setText("jButton1");
+        getContentPane().add(b27, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 210, 80, 80));
+
+        b35.setText("jButton1");
+        getContentPane().add(b35, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 290, 80, 80));
+
+        b36.setText("jButton1");
+        getContentPane().add(b36, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 290, 80, 80));
+
+        b37.setText("jButton1");
+        getContentPane().add(b37, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 290, 80, 80));
+
+        b50.setText("jButton1");
+        getContentPane().add(b50, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 450, 80, 80));
+
+        b60.setText("jButton1");
+        getContentPane().add(b60, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 530, 80, 80));
+
+        b70.setText("jButton1");
+        getContentPane().add(b70, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 610, 80, 80));
+
+        b22.setText("jButton1");
+        getContentPane().add(b22, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 210, 80, 80));
+
+        b43.setText("jButton1");
+        getContentPane().add(b43, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 370, 80, 80));
+
+        b44.setText("jButton1");
+        getContentPane().add(b44, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 370, 80, 80));
+
+        b45.setText("jButton1");
+        getContentPane().add(b45, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 370, 80, 80));
+
+        b46.setText("jButton1");
+        getContentPane().add(b46, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 370, 80, 80));
+
+        b47.setText("jButton1");
+        getContentPane().add(b47, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 370, 80, 80));
+
+        b57.setText("jButton1");
+        getContentPane().add(b57, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 450, 80, 80));
+
+        b56.setText("jButton1");
+        getContentPane().add(b56, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 450, 80, 80));
+
+        b55.setText("jButton1");
+        getContentPane().add(b55, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 450, 80, 80));
+
+        b53.setText("jButton1");
+        getContentPane().add(b53, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 450, 80, 80));
+
+        b54.setText("jButton1");
+        getContentPane().add(b54, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 450, 80, 80));
+
+        b52.setText("jButton1");
+        getContentPane().add(b52, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 450, 80, 80));
+
+        b41.setText("jButton1");
+        getContentPane().add(b41, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 370, 80, 80));
+
+        b61.setText("jButton1");
+        getContentPane().add(b61, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 530, 80, 80));
+
+        b62.setText("jButton1");
+        getContentPane().add(b62, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 530, 80, 80));
+
+        b71.setText("jButton1");
+        getContentPane().add(b71, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 610, 80, 80));
+
+        b63.setText("jButton1");
+        getContentPane().add(b63, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 530, 80, 80));
+
+        b51.setText("jButton1");
+        getContentPane().add(b51, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 450, 80, 80));
+
+        b73.setText("jButton1");
+        getContentPane().add(b73, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 610, 80, 80));
+
+        b64.setText("jButton1");
+        getContentPane().add(b64, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 530, 80, 80));
+
+        b66.setText("jButton1");
+        getContentPane().add(b66, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 530, 80, 80));
+
+        b65.setText("jButton1");
+        getContentPane().add(b65, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 530, 80, 80));
+
+        b67.setText("jButton1");
+        getContentPane().add(b67, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 530, 80, 80));
+
+        b74.setText("jButton1");
+        getContentPane().add(b74, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 610, 80, 80));
+
+        b75.setText("jButton1");
+        getContentPane().add(b75, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 610, 80, 80));
+
+        b76.setText("jButton1");
+        getContentPane().add(b76, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 610, 80, 80));
+
+        b77.setText("jButton1");
+        getContentPane().add(b77, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 610, 80, 80));
+
+        b72.setText("jButton1");
+        getContentPane().add(b72, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 610, 80, 80));
+
+        jLabel2.setText("           0                      1                      2                     3                     4                      5                     6                     7");
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 30, 1090, -1));
+
+        jLabel3.setText("1");
+        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 160, -1, -1));
+
+        jLabel4.setText("2");
+        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 240, -1, -1));
+
+        jLabel5.setText("5");
+        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 480, 20, -1));
+
+        jLabel6.setText("0");
+        getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 80, 40, -1));
+
+        jLabel7.setText("3");
+        getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 320, 20, -1));
+
+        jLabel8.setText("6");
+        getContentPane().add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 560, 20, -1));
+
+        jLabel9.setText("7");
+        getContentPane().add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 640, 30, -1));
+
+        jLabel10.setText("4");
+        getContentPane().add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 400, 20, -1));
+
+        jLabel1.setText("C blanco = caballo blanco");
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(780, 600, -1, -1));
+
+        jLabel12.setText("T Blanco = torre blanco");
+        getContentPane().add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(780, 620, -1, -1));
+
+        jLabel13.setText("R Blanco = Rey blamco");
+        getContentPane().add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(780, 560, -1, -1));
+
+        jLabel14.setText("r blanco = reina blanca");
+        getContentPane().add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(780, 640, -1, -1));
+
+        jLabel15.setText("A blanco = Alfil blanco");
+        getContentPane().add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(780, 660, -1, -1));
+
+        jLabel16.setText("P Blanco = peon blanco");
+        getContentPane().add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(780, 580, -1, -1));
+
+        jLabel17.setText("C negro = caballo negro");
+        getContentPane().add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(780, 100, -1, -1));
+
+        jLabel18.setText("T negro = torre negro");
+        getContentPane().add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(780, 120, -1, -1));
+
+        jLabel19.setText("R negro = Rey negro");
+        getContentPane().add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(780, 60, -1, -1));
+
+        jLabel20.setText("r negro = reina negro");
+        getContentPane().add(jLabel20, new org.netbeans.lib.awtextra.AbsoluteConstraints(780, 140, -1, -1));
+
+        jLabel21.setText("A negro = Alfil negro");
+        getContentPane().add(jLabel21, new org.netbeans.lib.awtextra.AbsoluteConstraints(780, 160, -1, -1));
+
+        jLabel22.setText("P negro = peon negro");
+        getContentPane().add(jLabel22, new org.netbeans.lib.awtextra.AbsoluteConstraints(780, 80, -1, -1));
+        getContentPane().add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(1020, 240, -1, -1));
+
+        quienva.setText("jLabel23");
+        getContentPane().add(quienva, new org.netbeans.lib.awtextra.AbsoluteConstraints(780, 240, -1, -1));
+
+        inicio.setText("Iniciar juego");
+        inicio.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                inicioMouseClicked(evt);
+            }
+        });
+        getContentPane().add(inicio, new org.netbeans.lib.awtextra.AbsoluteConstraints(780, 200, -1, -1));
+
+        jLabel23.setText("cordenada X,Y casilla destino");
+        getContentPane().add(jLabel23, new org.netbeans.lib.awtextra.AbsoluteConstraints(800, 350, -1, -1));
+
+        jLabel24.setText("cordenada X,Y pieza");
+        getContentPane().add(jLabel24, new org.netbeans.lib.awtextra.AbsoluteConstraints(810, 270, -1, -1));
+
+        mover.setText("Mover");
+        mover.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                moverMouseClicked(evt);
+            }
+        });
+        getContentPane().add(mover, new org.netbeans.lib.awtextra.AbsoluteConstraints(1000, 330, -1, -1));
+        getContentPane().add(jLabel27, new org.netbeans.lib.awtextra.AbsoluteConstraints(1060, 310, -1, -1));
+
+        Y1.setModel(new javax.swing.SpinnerNumberModel(0, 0, 7, 1));
+        getContentPane().add(Y1, new org.netbeans.lib.awtextra.AbsoluteConstraints(900, 300, -1, -1));
+
+        X2.setModel(new javax.swing.SpinnerNumberModel(0, 0, 7, 1));
+        getContentPane().add(X2, new org.netbeans.lib.awtextra.AbsoluteConstraints(800, 380, -1, -1));
+
+        Y2.setModel(new javax.swing.SpinnerNumberModel(0, 0, 7, 1));
+        getContentPane().add(Y2, new org.netbeans.lib.awtextra.AbsoluteConstraints(900, 380, -1, -1));
+
+        X1.setModel(new javax.swing.SpinnerNumberModel(0, 0, 7, 1));
+        getContentPane().add(X1, new org.netbeans.lib.awtextra.AbsoluteConstraints(800, 300, -1, -1));
+
+        jLabel28.setText("X                            Y");
+        getContentPane().add(jLabel28, new org.netbeans.lib.awtextra.AbsoluteConstraints(860, 370, -1, 30));
+
+        jLabel29.setText("X                            Y");
+        getContentPane().add(jLabel29, new org.netbeans.lib.awtextra.AbsoluteConstraints(860, 300, -1, 30));
+
+        guia.setColumns(20);
+        guia.setRows(5);
+        jScrollPane1.setViewportView(guia);
+
+        getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(1170, 260, 250, 220));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton1MouseClicked
+    private void b00MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b00MouseClicked
+    }//GEN-LAST:event_b00MouseClicked
+
+    private void b01MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b01MouseClicked
+    }//GEN-LAST:event_b01MouseClicked
+
+    private void b10MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b10MouseClicked
+// TODO add your handling code here:
+    }//GEN-LAST:event_b10MouseClicked
+
+    private void b11MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b11MouseClicked
+// TODO add your handling code here:
+    }//GEN-LAST:event_b11MouseClicked
+
+    private void b02MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b02MouseClicked
+// TODO add your handling code here:
+    }//GEN-LAST:event_b02MouseClicked
+
+    private void b03MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b03MouseClicked
+// TODO add your handling code here:
+    }//GEN-LAST:event_b03MouseClicked
+
+    private void b04MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b04MouseClicked
+// TODO add your handling code here:
+    }//GEN-LAST:event_b04MouseClicked
+
+    private void b05MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b05MouseClicked
+// TODO add your handling code here:
+    }//GEN-LAST:event_b05MouseClicked
+
+    private void b06MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b06MouseClicked
         // TODO add your handling code here:
-        panel = new JPanel();
-        panel.setLayout(new GridLayout(8, 8));
-        panel.setBounds(0, 0, 600, 600);
-        this.add(panel);
-        panel.setVisible(true);
-        for (int i = 0; i < matris.length; i++) {
-            for (int j = 0; j <matris[i].length; j++) {
-                System.out.print(matris[i][j]);
-            }
-            System.out.println("");
+    }//GEN-LAST:event_b06MouseClicked
+
+    private void b07MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b07MouseClicked
+
+    }//GEN-LAST:event_b07MouseClicked
+
+    private void b12MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b12MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_b12MouseClicked
+
+    private void b13MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b13MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_b13MouseClicked
+
+    private void b14MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b14MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_b14MouseClicked
+
+    private void b15MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b15MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_b15MouseClicked
+
+    private void b16MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b16MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_b16MouseClicked
+
+    private void inicioMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_inicioMouseClicked
+        if (pos == -1) {
+            this.quienva.setText("van las piezas blancas");
+            pos = 1;
         }
-    }//GEN-LAST:event_jButton1MouseClicked
+        for (int i = 0; i < 8; i++) {
+            for (int j = 0; j < 8; j++) {
+                guia.append(i+""+j+" ");
+            }
+            guia.append("\n");
+        }
+    }//GEN-LAST:event_inicioMouseClicked
+
+    private void moverMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_moverMouseClicked
+        int x1 = (int) X1.getValue();
+        int y1 = (int) Y1.getValue();
+        int x2 = (int) X2.getValue();
+        int y2 = (int) Y2.getValue();
+        boolean valido = false;
+        boolean color = false;
+        System.out.println("truno" + pos);
+
+        if (pos == 1) {//blanco
+            try {
+                if (mat[x1][y1].equals("")) {
+                    JOptionPane.showMessageDialog(this, "no hay ninguna pieza en este lugar\ningrese otra posicion");
+
+                } else {
+                    valido = true;
+                }
+                if (((Pieza) mat[x1][y1]).getColor().equals(Color.white)) {
+                    //System.out.println("si es color");
+                    color = true;
+                } else {
+                    JOptionPane.showMessageDialog(this, "la pieza no es del color blanco");
+                }
+                if (valido == true && color == true) {
+                    //System.out.println("si se puede");
+                }
+            } catch (Exception e) {
+            }
+            if (valido == true && color == true) {
+                //System.out.println(((Pieza) mat[x1][y1]).getNombre());
+                boolean moverse = ((Pieza) mat[x1][y1]).moverse(x1, y1, x2, y2, mat);
+                // System.out.println("revisa boolean" + moverse);
+                //boolean comer = ((Pieza) mat[x1][y1]).moverse(x1, y1, x2, y2, mat);
+                if (moverse == true) {
+                    //System.out.println("moueve");
+                    mat[x2][y2] = mat[x1][y1];
+                    mat[x1][y1] = "";
+                    matriz[x2][y2].setText(mat[x2][y2].toString());
+                    matriz[x1][y1].setText("");
+                    pos = 0;
+                } else {
+                    JOptionPane.showMessageDialog(this, "movimiento invalido");
+                }
+
+            }
+
+        } else if (pos == 0) {
+            try {
+                if (mat[x1][y1].equals("")) {
+                    JOptionPane.showMessageDialog(this, "no hay ninguna pieza en este lugar\ningrese otra posicion");
+
+                } else {
+                    valido = true;
+                }
+                if (((Pieza) mat[x1][y1]).getColor().equals(Color.black)) {
+                    //System.out.println("si es color");
+                    color = true;
+                } else {
+                    JOptionPane.showMessageDialog(this, "la pieza no es del color negro");
+                }
+
+            } catch (Exception e) {
+            }
+            if (valido == true && color == true) {
+
+                //System.out.println(((Peon) mat[x1][y1]).getCont());
+                //System.out.println(((Pieza) mat[x1][y1]).getNombre());
+                boolean moverse = ((Pieza) mat[x1][y1]).moverse(x1, y1, x2, y2, mat);
+                // boolean comer = ((Pieza) mat[x1][y1]).moverse(x1, y1, x2, y2, mat);
+                //System.out.println("revisa boolean" + moverse);
+                if (moverse == true) {
+                    //   System.out.println("muevenegro");
+                    mat[x2][y2] = mat[x1][y1];
+                    mat[x1][y1] = "";
+                    matriz[x2][y2].setText(mat[x2][y2].toString());
+                    matriz[x1][y1].setText("");
+                    pos = 1;
+                } else {
+                    JOptionPane.showMessageDialog(this, "movimineto invalido");
+                }
+
+            }
+
+        }
+        if (pos == 0) {
+            quienva.setText("van piezas negras");
+        }
+        if (pos == 1) {
+            quienva.setText("van piezas blancas");
+        }
+
+    }//GEN-LAST:event_moverMouseClicked
 
     /**
      * @param args the command line arguments
@@ -132,11 +727,230 @@ public class Principal extends javax.swing.JFrame {
         });
     }
 
+    public void asigna() {
+        matriz[0][0] = b00;
+        matriz[0][1] = b01;
+        matriz[0][2] = b02;
+        matriz[0][3] = b03;
+        matriz[0][4] = b04;
+        matriz[0][5] = b05;
+        matriz[0][6] = b06;
+        matriz[0][7] = b07;
+        matriz[1][0] = b10;
+        matriz[1][1] = b11;
+        matriz[1][2] = b12;
+        matriz[1][3] = b13;
+        matriz[1][4] = b14;
+        matriz[1][5] = b15;
+        matriz[1][6] = b16;
+        matriz[1][7] = b17;
+        matriz[2][0] = b20;
+        matriz[2][1] = b21;
+        matriz[2][2] = b22;
+        matriz[2][3] = b23;
+        matriz[2][4] = b24;
+        matriz[2][5] = b25;
+        matriz[2][6] = b26;
+        matriz[2][7] = b27;
+        matriz[3][0] = b30;
+        matriz[3][1] = b31;
+        matriz[3][2] = b32;
+        matriz[3][3] = b33;
+        matriz[3][4] = b34;
+        matriz[3][5] = b35;
+        matriz[3][6] = b36;
+        matriz[3][7] = b37;
+        matriz[4][0] = b40;
+        matriz[4][1] = b41;
+        matriz[4][2] = b42;
+        matriz[4][3] = b43;
+        matriz[4][4] = b44;
+        matriz[4][5] = b45;
+        matriz[4][6] = b46;
+        matriz[4][7] = b47;
+        matriz[5][0] = b50;
+        matriz[5][1] = b51;
+        matriz[5][2] = b52;
+        matriz[5][3] = b53;
+        matriz[5][4] = b54;
+        matriz[5][5] = b55;
+        matriz[5][6] = b56;
+        matriz[5][7] = b57;
+        matriz[6][0] = b60;
+        matriz[6][1] = b61;
+        matriz[6][2] = b62;
+        matriz[6][3] = b63;
+        matriz[6][4] = b64;
+        matriz[6][5] = b65;
+        matriz[6][6] = b66;
+        matriz[6][7] = b67;
+        matriz[7][0] = b70;
+        matriz[7][1] = b71;
+        matriz[7][2] = b72;
+        matriz[7][3] = b73;
+        matriz[7][4] = b74;
+        matriz[7][5] = b75;
+        matriz[7][6] = b76;
+        matriz[7][7] = b77;
+    }
+
+    public void asigna2() {
+        //System.out.println(matriz.length);
+        //System.out.println(mat.length);
+        for (int i = 0; i < matriz.length; i++) {
+            for (int j = 0; j < matriz[i].length; j++) {
+                matriz[i][j].setText(mat[i][j].toString());
+            }
+        }
+    }
+
+    public void asignarpiezas() {
+        for (int i = 0; i < mat.length; i++) {
+            for (int j = 0; j < mat[i].length; j++) {
+                if (i == 1 || i == 6) {//peon
+                    if (i == 1) {
+                        mat[i][j] = new Peon(i, j, Color.BLACK, "P negro", true);
+                        //System.out.println("en 1");
+                    } else if (i == 6) {
+                        mat[i][j] = new Peon(i, j, Color.WHITE, "P blanco", true);
+                        //System.out.println("en 6");
+                    }
+
+                } else if (i == 0 && j == 0 || i == 0 && j == 7) {//torre
+                    mat[i][j] = new Torre(i, j, Color.BLACK, "T negro", true);
+                } else if (i == 0 && j == 1 || i == 0 && j == 6) {
+                    mat[i][j] = new Caballo(i, j, Color.BLACK, "C negro", true);
+                } else if (i == 0 && j == 2 || i == 0 & j == 5) {
+                    mat[i][j] = new Alfil(i, j, Color.BLACK, "A negro", true);
+                } else if (i == 0 && j == 3) {
+                    mat[i][j] = new Rey(i, j, Color.BLACK, "R negro", true);
+                } else if (i == 0 && j == 4) {
+                    mat[i][j] = new Reina(i, j, Color.BLACK, "r negro", true);
+                } else if (i == 7 && j == 0 || i == 7 && j == 7) {
+                    mat[i][j] = new Torre(i, j, Color.WHITE, "T blanco", true);
+                } else if (i == 7 && j == 1 || i == 7 && j == 6) {
+                    mat[i][j] = new Caballo(i, j, Color.WHITE, "C blanco", true);
+                } else if (i == 7 && j == 2 || i == 7 && j == 5) {
+                    mat[i][j] = new Alfil(i, j, Color.WHITE, "A blanco", true);
+                } else if (i == 7 && j == 3) {
+                    mat[i][j] = new Rey(i, j, Color.WHITE, "R blanco", true);
+                } else if (i == 7 && j == 4) {
+                    mat[i][j] = new Reina(i, j, Color.WHITE, "r blanco", true);
+                } else {
+                    mat[i][j] = "";
+                }
+
+            }
+        }
+
+    }
+
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JPanel panel;
+    private javax.swing.JSpinner X1;
+    private javax.swing.JSpinner X2;
+    private javax.swing.JSpinner Y1;
+    private javax.swing.JSpinner Y2;
+    private javax.swing.JButton b00;
+    private javax.swing.JButton b01;
+    private javax.swing.JButton b02;
+    private javax.swing.JButton b03;
+    private javax.swing.JButton b04;
+    private javax.swing.JButton b05;
+    private javax.swing.JButton b06;
+    private javax.swing.JButton b07;
+    private javax.swing.JButton b10;
+    private javax.swing.JButton b11;
+    private javax.swing.JButton b12;
+    private javax.swing.JButton b13;
+    private javax.swing.JButton b14;
+    private javax.swing.JButton b15;
+    private javax.swing.JButton b16;
+    private javax.swing.JButton b17;
+    private javax.swing.JButton b20;
+    private javax.swing.JButton b21;
+    private javax.swing.JButton b22;
+    private javax.swing.JButton b23;
+    private javax.swing.JButton b24;
+    private javax.swing.JButton b25;
+    private javax.swing.JButton b26;
+    private javax.swing.JButton b27;
+    private javax.swing.JButton b30;
+    private javax.swing.JButton b31;
+    private javax.swing.JButton b32;
+    private javax.swing.JButton b33;
+    private javax.swing.JButton b34;
+    private javax.swing.JButton b35;
+    private javax.swing.JButton b36;
+    private javax.swing.JButton b37;
+    private javax.swing.JButton b40;
+    private javax.swing.JButton b41;
+    private javax.swing.JButton b42;
+    private javax.swing.JButton b43;
+    private javax.swing.JButton b44;
+    private javax.swing.JButton b45;
+    private javax.swing.JButton b46;
+    private javax.swing.JButton b47;
+    private javax.swing.JButton b50;
+    private javax.swing.JButton b51;
+    private javax.swing.JButton b52;
+    private javax.swing.JButton b53;
+    private javax.swing.JButton b54;
+    private javax.swing.JButton b55;
+    private javax.swing.JButton b56;
+    private javax.swing.JButton b57;
+    private javax.swing.JButton b60;
+    private javax.swing.JButton b61;
+    private javax.swing.JButton b62;
+    private javax.swing.JButton b63;
+    private javax.swing.JButton b64;
+    private javax.swing.JButton b65;
+    private javax.swing.JButton b66;
+    private javax.swing.JButton b67;
+    private javax.swing.JButton b70;
+    private javax.swing.JButton b71;
+    private javax.swing.JButton b72;
+    private javax.swing.JButton b73;
+    private javax.swing.JButton b74;
+    private javax.swing.JButton b75;
+    private javax.swing.JButton b76;
+    private javax.swing.JButton b77;
+    private javax.swing.JTextArea guia;
+    private javax.swing.JButton inicio;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel11;
+    private javax.swing.JLabel jLabel12;
+    private javax.swing.JLabel jLabel13;
+    private javax.swing.JLabel jLabel14;
+    private javax.swing.JLabel jLabel15;
+    private javax.swing.JLabel jLabel16;
+    private javax.swing.JLabel jLabel17;
+    private javax.swing.JLabel jLabel18;
+    private javax.swing.JLabel jLabel19;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel20;
+    private javax.swing.JLabel jLabel21;
+    private javax.swing.JLabel jLabel22;
+    private javax.swing.JLabel jLabel23;
+    private javax.swing.JLabel jLabel24;
+    private javax.swing.JLabel jLabel27;
+    private javax.swing.JLabel jLabel28;
+    private javax.swing.JLabel jLabel29;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
+    private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JButton mover;
+    private javax.swing.JLabel quienva;
     // End of variables declaration//GEN-END:variables
-    int pos = 0;
+    int pos = -1;
     String guardado = "";
-    JButton[][]matris= new JButton[10][10];
+    Pieza[] piezas = new Pieza[32];
+    JButton[][] matriz = new JButton[8][8];
+    Object[][] mat = new Object[8][8];
+
 }

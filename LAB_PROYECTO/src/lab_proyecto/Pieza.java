@@ -17,11 +17,12 @@ public abstract class Pieza {
 
     private int posx;
     private int posy;
-    private String color;
+    private Color color;
     private String nombre;
     private boolean activa;
+    
 
-    public Pieza(int posx, int posy, String color, String nombre, boolean activa) {
+    public Pieza(int posx, int posy,Color color, String nombre, boolean activa) {
         this.posx = posx;
         this.posy = posy;
         this.color = color;
@@ -45,11 +46,11 @@ public abstract class Pieza {
         this.posy = posy;
     }
 
-    public String getColor() {
+    public Color getColor() {
         return color;
     }
 
-    public void setColor(String color) {
+    public void setColor(Color color) {
         this.color = color;
     }
 
@@ -69,8 +70,8 @@ public abstract class Pieza {
         this.activa = activa;
     }
 
-    abstract boolean moverse(int x1, int y1, int x2, int y2);
+    abstract boolean moverse(int x1, int y1, int x2, int y2,Object[][]mat);
 
-    abstract boolean comer(int x1, int y1, int x2, int y2);
+    abstract boolean comer(int x1, int y1, int x2, int y2,Object[][]mat);
 
 }
