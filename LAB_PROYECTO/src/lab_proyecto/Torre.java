@@ -17,16 +17,16 @@ public class Torre extends Pieza {
         super(posx, posy, color, nombre, activa);
     }
 
-    
-
     @Override
-    boolean moverse(int x1, int y1, int x2, int y2,Object[][]mat) {
-        return true;
+    boolean moverse(int x1, int y1, int x2, int y2, Object[][] mat) {
+        boolean mover = false;
+        return mover;
     }
 
     @Override
-    boolean comer(int x1, int y1, int x2, int y2,Object[][]mat) {
-        return true;
+    boolean comer(int x1, int y1, int x2, int y2, Object[][] mat) {
+        boolean comer = false;
+        return comer;
     }
 
     @Override
